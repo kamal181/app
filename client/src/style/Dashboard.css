@@ -1,0 +1,24 @@
+.dashboard-nav {
+  padding: 0 !important;
+  flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+  .dashboard-nav {
+    flex-direction: column;
+  }
+}
+.dashboard-nav .dashboard-nav-items {
+  width: 15em !important;
+  min-height: 100vh;
+  flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+  .dashboard-nav .dashboard-nav-items {
+    flex-direction: row;
+    margin-top: 1em;
+    width: 100% !important;
+    min-height: fit-content !important;
+  }
+}
+
+/*# sourceMappingURL=Dashboard.css.map */

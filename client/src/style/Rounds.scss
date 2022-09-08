@@ -1,0 +1,202 @@
+@import "./variables";
+@import "./mixins";
+
+.Rounds {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.submit-btn-wrap {
+    background-color: white;
+    position: sticky;
+    z-index: 4;
+    top: 0;
+    padding: 7px 0;
+    .submit-btn {
+        top: 0.5rem;
+        margin-left: 48%;
+        @media screen and(max-width: $br-lg) {
+            margin-left: 0;
+        }
+    }
+}
+
+.rank-n-group{
+    // my-3 d-flex justify-content-between
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    @media screen and(max-width: $br-lg) {
+        height: 6em;
+        align-items: center;
+        flex-direction: column;
+        button{
+            border: solid 1px rgb(19, 172, 108);
+        }
+    }
+
+}
+
+
+// ⛏️⛏️ ROUND ONE TO FIVE  ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+.show-all-nets {
+    background-color: white;
+    tr {
+        td {
+            padding: 0 !important;
+        }
+
+        .two-participant {
+            min-height: $t-p-height;
+            @include center_horizontally();
+        }
+        .player-point,
+        .player-point-differential,
+        .player-score {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        input[type="text"] {
+            height: 32px;
+        }
+        .net-less-four {
+            height: 100%;
+            @include center_horizontally();
+            .short-net-player {
+                min-height: 70px;
+            }
+        }
+        .net-less-four-total {
+            height: 100%;
+            padding-bottom: 8px;
+            @include center_horizontally();
+            .short-net-player {
+                min-height: 70px;
+            }
+        }
+
+        .players-in-net {
+            // height: $t-p-height * 2;
+            @include center_horizontally();
+        }
+
+        .players-in-net-total {
+            height: 276px;
+            @include center_horizontally();
+            @media screen and(max-width: $br-lg) {
+                height: 268px;
+            }
+        }
+
+        .btn-outline-transparent:focus {
+            border-color: inherit;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            &:focus {
+                outline: none !important;
+            }
+        }
+        // .got-point-name{
+        //     color: green;
+        //     // background: rgb(129, 240, 203);
+        // }
+        // .no-point-name{
+        //     color: red;
+        // }
+
+        // .tp-point {
+        //     margin: $t-p-p-m;
+        // }
+        // .tp-point-diffrential {
+        //     margin: $t-p-p-m;
+        // }
+
+        // .player-name, .point-extra{
+        //     height: 48px;
+        //     align-items: center;
+        // }
+
+        // .player-sl{
+        //     margin: $t-p-p-m !important;
+        // }
+        // .f-point, .f-point-differential{
+        //     margin: $p-w-n-my;
+        // }
+
+        // .got-point{
+        //     // background: rgb(148, 148, 241);
+        // }
+
+        .two-p-input {
+            min-height: $t-p-height;
+            @include center_horizontally();
+        }
+        // .two-p-input-1 {
+        // }
+        // .two-p-input-2 {
+        //     margin-top: 0.8em;
+        // }
+
+        // .two-p-i-1 {
+        // }
+        // .two-p-i-2 {
+        //     margin-top: 0.8em;
+        // }
+        .form-control {
+            width: $input-w;
+            margin: 5px 0;
+        }
+
+        .not-mingle-point {
+            margin: $p-my-ns 0;
+        }
+        // .player-name {
+        //     margin: $p-my-ns 0;
+        // }
+
+        .line {
+            margin-top: 12px;
+            width: 100%;
+            position: relative;
+            @media screen and(max-width: $br-lg) {
+                margin-top: 8px;
+            }
+        }
+        .line::before {
+            content: "";
+            position: absolute;
+            border-bottom: 1px rgba(0, 0, 0, 0.247) solid;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+
+        .vs {
+            display: flex;
+            flex-direction: row;
+        }
+        .vs::before,
+        .vs::after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 1px rgba(0, 0, 0, 0.247) solid;
+            margin: auto;
+        }
+        .vs::before {
+            margin-right: 10px;
+        }
+        .vs::after {
+            margin-left: 10px;
+        }
+
+        .extra-icon {
+            width: 15px;
+            margin-left: 5px;
+        }
+        // .extra-input {
+        //     width: $input-w;
+        //     margin-left: 5px;
+        // }
+    }
+}

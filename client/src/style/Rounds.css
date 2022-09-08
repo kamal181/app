@@ -1,0 +1,166 @@
+.Rounds {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.submit-btn-wrap {
+  background-color: white;
+  position: sticky;
+  z-index: 4;
+  top: 0;
+  padding: 7px 0;
+}
+.submit-btn-wrap .submit-btn {
+  top: 0.5rem;
+  margin-left: 48%;
+}
+@media screen and (max-width: 992px) {
+  .submit-btn-wrap .submit-btn {
+    margin-left: 0;
+  }
+}
+
+.rank-n-group {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .rank-n-group {
+    height: 6em;
+    align-items: center;
+    flex-direction: column;
+  }
+  .rank-n-group button {
+    border: solid 1px #13ac6c;
+  }
+}
+
+.show-all-nets {
+  background-color: white;
+}
+.show-all-nets tr td {
+  padding: 0 !important;
+}
+.show-all-nets tr .two-participant {
+  min-height: 126px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.show-all-nets tr .player-point,
+.show-all-nets tr .player-point-differential,
+.show-all-nets tr .player-score {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.show-all-nets tr input[type=text] {
+  height: 32px;
+}
+.show-all-nets tr .net-less-four {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.show-all-nets tr .net-less-four .short-net-player {
+  min-height: 70px;
+}
+.show-all-nets tr .net-less-four-total {
+  height: 100%;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.show-all-nets tr .net-less-four-total .short-net-player {
+  min-height: 70px;
+}
+.show-all-nets tr .players-in-net {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.show-all-nets tr .players-in-net-total {
+  height: 276px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+  .show-all-nets tr .players-in-net-total {
+    height: 268px;
+  }
+}
+.show-all-nets tr .btn-outline-transparent:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.show-all-nets tr .btn-outline-transparent:focus:focus {
+  outline: none !important;
+}
+.show-all-nets tr .two-p-input {
+  min-height: 126px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.show-all-nets tr .form-control {
+  width: 4.5rem;
+  margin: 5px 0;
+}
+.show-all-nets tr .not-mingle-point {
+  margin: 15px 0;
+}
+.show-all-nets tr .line {
+  margin-top: 12px;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .show-all-nets tr .line {
+    margin-top: 8px;
+  }
+}
+.show-all-nets tr .line::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px rgba(0, 0, 0, 0.247) solid;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.show-all-nets tr .vs {
+  display: flex;
+  flex-direction: row;
+}
+.show-all-nets tr .vs::before,
+.show-all-nets tr .vs::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px rgba(0, 0, 0, 0.247) solid;
+  margin: auto;
+}
+.show-all-nets tr .vs::before {
+  margin-right: 10px;
+}
+.show-all-nets tr .vs::after {
+  margin-left: 10px;
+}
+.show-all-nets tr .extra-icon {
+  width: 15px;
+  margin-left: 5px;
+}
+
+
+.ag-grid-setting {
+  height : 500px;
+}
+/*# sourceMappingURL=Rounds.css.map */

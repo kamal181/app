@@ -1,0 +1,91 @@
+@import "./fonts";
+@import "./variables";
+@import "./mixins";
+
+// ROOT STYLING 
+.App {
+  font-size: 1em;
+  // font-family: 'Amiri', serif;
+  .btn-primary{
+    background-color: #079b8e;
+  }
+  
+  .Navbar{
+    font-family: 'Montagu Slab', serif;
+    img{
+      width: 60px;
+      height: 60px;
+    }
+  }
+  @media screen and (max-width: $br-lg) {
+    img{
+      width: 30px;
+      height: 30px;
+    }
+    font-size: 0.7em;
+    .btn {
+      font-size: 1em;
+    }
+  }
+}
+
+.spinner-parent {
+  width: 100%;
+  height: 100%;
+}
+.spinner-child {
+  width: 4rem;
+  height: 4rem;
+}
+
+.table {
+  overflow-x: auto !important;
+}
+.horizontal-border{
+  // border-color: rgba(33, 51, 216, 0.712);
+  border-bottom: 1px solid rgba(13, 91, 180, 0.877);
+}
+.w-full{
+  width: 100%;
+}
+
+.equal-icon{
+  width: 1.5rem;
+}
+
+.net-table {
+  thead {
+      .header-group-1 {
+          // border: 1px solid white;
+
+          th {
+              @include sticky_header(3.25em, 2);
+          }
+      }
+      .header-group-2 {
+          th {
+              @include sticky_header(5.8em, 2);
+          }
+      }
+
+      th[scope="row"] {
+          @include sticky_header(0, 1);
+      }
+  }
+
+  @media screen and(max-width: $br-lg) {
+      // overflow-x: visible;
+      thead {
+          .header-group-1{
+              th {
+                  position: static;
+              }
+          }
+          .header-group-2{
+              th {
+                  position: static;
+              }
+          }
+      }
+  }
+}

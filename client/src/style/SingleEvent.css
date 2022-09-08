@@ -1,0 +1,33 @@
+.tab-content {
+  width: 100%;
+}
+.tab-content .tab-pane {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 10px;
+}
+
+.SingleEvent .dashboard-nav-items .nv-btns-list {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+  .SingleEvent .dashboard-nav-items .nv-btns-list {
+    border-top: 1px solid #0c0c0c;
+    flex-direction: row;
+  }
+}
+
+.Rounds .tab-pane {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.Score .tab-pane {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=SingleEvent.css.map */

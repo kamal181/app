@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+.App {
+  font-size: 1em;
+}
+.App .btn-primary {
+  background-color: #079b8e;
+}
+.App .Navbar {
+  font-family: "Montagu Slab", serif;
+}
+.App .Navbar img {
+  width: 60px;
+  height: 60px;
+}
+@media screen and (max-width: 992px) {
+  .App {
+    font-size: 0.7em;
+  }
+  .App img {
+    width: 30px;
+    height: 30px;
+  }
+  .App .btn {
+    font-size: 1em;
+  }
+}
+
+.spinner-parent {
+  width: 100%;
+  height: 100%;
+}
+
+.spinner-child {
+  width: 4rem;
+  height: 4rem;
+}
+
+.table {
+  overflow-x: auto !important;
+}
+
+.horizontal-border {
+  border-bottom: 1px solid rgba(13, 91, 180, 0.877);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.equal-icon {
+  width: 1.5rem;
+}
+
+.net-table thead .header-group-1 th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3.25em;
+  z-index: 2;
+}
+.net-table thead .header-group-2 th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5.8em;
+  z-index: 2;
+}
+.net-table thead th[scope=row] {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 992px) {
+  .net-table thead .header-group-1 th {
+    position: static;
+  }
+  .net-table thead .header-group-2 th {
+    position: static;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,50 @@
+@import "./variables";
+@import "./mixins";
+
+
+
+
+.tab-content{
+    width: 100%;
+    .tab-pane{
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 10px;
+    }
+}
+
+
+.SingleEvent{
+    .dashboard-nav-items{
+        .nv-btns-list{
+            display: flex;
+            flex-direction: column;
+            @media screen and(max-width: $br-lg) {
+                border-top: 1px solid rgb(12, 12, 12);
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+.Rounds{
+    .tab-pane{
+        @include reset_tabpane();
+    }
+}
+.Score{
+    .tab-pane{
+        @include reset_tabpane();
+    }
+}
+
+// ⛏️⛏️ PARENT COMPONENT ROUNDS  ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+// .Rounds {
+//     // mx-lg-5 mt-3
+//     @include tab_content();
+// }
+
+// .Participants{
+//     @include tab_content();
+    
+// }

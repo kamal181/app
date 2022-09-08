@@ -1,0 +1,74 @@
+@import "./variables";
+@import "./mixins";
+
+.RoundTable {
+    .net-table{
+        thead {
+            .header-group-1{
+                th{
+                    top: 0;
+                }
+            }
+            .header-group-2{
+                th{
+                    top: 2.52em;
+                }
+            }
+        }
+    }
+    td {
+        padding: 0;
+        margin: 0;
+    }
+    .f-point {
+    }
+    // .player-point, .player-point-differential, .player-score{
+    //     padding: 0 !important;
+    //     margin: 0 !important;
+    // }
+    .two-p {
+        min-height: $t-p-height;
+        @include center_horizontally();
+    }
+    .two-pd {
+        min-height: $t-p-height;
+        @include center_horizontally();
+    }
+    .players-in-net {
+        // height: $t-p-height * 2;
+        @include center_horizontally();
+    }
+    .net-less-four {
+        height: 100%;
+        @include center_horizontally();
+        .short-net-player {
+            min-height: 70px;
+        }
+    }
+
+    // .two-p {
+    //     // height: $t-p-height;
+    //     // .p-item {
+    //     //     height: $item-height;
+    //     // }
+    //     // .p-i-1 {
+    //     //     margin-top: 0;
+    //     // }
+    //     // .p-i-2 {
+    //     //     margin-top: $mt-p-i-2;
+    //     // }
+    // }
+    // .two-pd {
+    //     // background: #000;
+    //     // height: $t-p-height;
+    //     // .pd-item {
+    //     //     height: $item-height;
+    //     // }
+    //     // .pd-i-1 {
+    //     //     margin-top: $mt-p-i-1;
+    //     // }
+    //     // .pd-i-2 {
+    //     //     margin-top: $mt-p-i-2;
+    //     // }
+    // }
+}

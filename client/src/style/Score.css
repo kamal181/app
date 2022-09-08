@@ -1,0 +1,42 @@
+.RoundTable .net-table thead .header-group-1 th {
+  top: 0;
+}
+.RoundTable .net-table thead .header-group-2 th {
+  top: 2.52em;
+}
+.RoundTable td {
+  padding: 0;
+  margin: 0;
+}
+.RoundTable .two-p {
+  min-height: 126px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.RoundTable .two-pd {
+  min-height: 126px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.RoundTable .players-in-net {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.RoundTable .net-less-four {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.RoundTable .net-less-four .short-net-player {
+  min-height: 70px;
+}
+
+/*# sourceMappingURL=Score.css.map */
